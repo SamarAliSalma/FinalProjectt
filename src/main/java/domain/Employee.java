@@ -1,0 +1,30 @@
+package domain;
+
+public class Employee extends Person {
+	private int salary;
+
+	public Employee() {
+		super();
+	}
+
+	public Employee(String name, int age, int salary) {
+		super(name, age);
+		this.salary = salary;
+	}
+
+	public int getSalary() {
+		return salary;
+	}
+
+	public void setSalary(int salary) {
+		this.salary = salary;
+	}
+
+	@Override
+	public String toString() {
+		return "Employee informaition [Salary: " + salary + ", " + super.toString() + " ]";
+	}
+
+	
+	
+}
